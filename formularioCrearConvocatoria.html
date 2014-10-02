@@ -7,11 +7,15 @@
 	<link rel="stylesheet" href="css/bootstrap.css">
 </head>
 <body>
-	<div class="Container col-lg-12">
+	<div class="container-fluid col-lg-12">
 		<form action="contact.php" method="POST">
 			<div class="row">
-				<div class="col-lg-12">
+				<div class="col-lg-6">
 					<header>Crear Convocatoria</header>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-6">
 					<p>
 						En este espacio diligencie los datos requeridos. los datos marcados con (*) son obligatorios cuando termine el click en aceptar.
 					</p>
@@ -93,8 +97,8 @@
 						<input type="date" name="fechaResultadoDefinitivo" id="fechaResultadoDefinitivo" class="form-control"/>	
 				</div>
 			</div>
-			<div class="row col-lg-7">
-				<div class="form-group">
+			<div class="row">
+				<div class="form-group col-lg-6">
 					<label for="convocatoria">
 						(*)Convocatoria
 					</label>
@@ -102,7 +106,7 @@
 				</div>
 			</div>
 			<div class="row">
-				<div class="form-group col-lg-7">
+				<div class="form-group col-lg-6">
 					<label for="descripcion">Descripcion</label>
 					<textarea name="descripcion" id="descripcion" rows="1" cols="1" class="form-control">
 
@@ -110,7 +114,7 @@
 				</div>
 			</div>
 			<div class="row">
-				<div class="form-group col-lg-7">
+				<div class="form-group col-lg-6">
 					<label for="objeto">Objeto</label>
 					<textarea name="objeto" id="objeto" rows="1" cols="1" class="form-control">
 
@@ -118,15 +122,47 @@
 				</div>
 			</div>
 			<div class="row">
-				<div class="form-group col-lg-7">
+				<div class="form-group col-lg-6">
 					<label for="dirigido">Dirigido A</label>
 					<textarea name="dirigido" id="dirigido" rows="1" cols="1" class="form-control">
 
 					</textarea>
 				</div>
 			</div>
-			<<!--->Faltan algunos componentes por agregar para completar el formulario. 
-			</!--->
+			<div class="row">
+				<div class="form-group col-lg-2">
+					<label for="programaBase">
+						Programa base
+					</label>
+					<select name="select" id="programaBase" class="form-control">
+						<option value="Seleccione">
+							Seleccione
+						</option>
+					</select>
+				</div>
+				<div class="form-group col-lg-2">
+					<label for="InstitucionesFinanciadoras">
+						InstitucionesFinanciadoras
+					</label>
+					<select name="select" id="InstitucionesFinanciadoras"
+					 class="form-control">
+						<option value="Seleccione">
+							Seleccione
+						</option>
+					</select>
+				</div>
+				<div class="form-group col-lg-2">
+					<label for="convenio">
+						Convenio
+					</label>
+					<select name="select" id="convenio"
+					 class="form-control">
+						<option value="Seleccione">
+							Seleccione
+						</option>
+					</select>
+				</div>
+			</div>
 		</form>
 	</div>
 </body>
