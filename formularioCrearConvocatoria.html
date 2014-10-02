@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Crear Convocatoria</title>
+	<link rel="stylesheet" href="css/bootstrap.css">
+</head>
+<body>
+	<div class="Container col-lg-12">
+		<form action="contact.php" method="POST">
+			<div class="row">
+				<div class="col-lg-12">
+					<header>Crear Convocatoria</header>
+					<p>
+						En este espacio diligencie los datos requeridos. los datos marcados con (*) son obligatorios cuando termine el click en aceptar.
+					</p>
+				</div>
+			</div>	
+			<div class="row">
+				<div class="form-group col-lg-2">
+					<label for="TipoConvocatoria">
+						Tipo de convocatoria
+					</label>
+					<select name="select" id="idSelect" class="form-control">
+						<option value="Seleccione">
+							Seleccione
+						</option>
+					</select>
+				</div>
+				<div class="form-group col-lg-2">
+					<label for="SubTipoConvocatoria">
+						Subtipo de convocatoria
+					</label>
+					<select name="select" id="idSelect" class="form-control">
+						<option value="Seleccione">
+							Seleccione
+						</option>
+					</select>
+				</div>
+				<div class="form-group col-lg-2">
+					<label for="fechaApertura">
+						(*)Fecha de apertura
+					</label>
+					<input type="date" name="fechaApertura" id="fechaApertura" class="form-control"/>	
+				</div>
+			</div>
+			<div class="row">
+				<div class="form-group col-lg-2">
+					<label for="ConvocatoriaPrograma">
+						Convocatoria de programa
+					</label>
+					<select name="select" id="idSelect" class="form-control">
+						<option value="Seleccione">
+							Seleccione
+						</option>
+					</select>
+				</div>
+				<div class="form-group col-lg-2">
+					<label for="TipoFinanciacion">
+						(*) Tipo de financiacion
+					</label>
+					<select name="select" id="idSelect" class="form-control">
+						<option value="Seleccione">
+							Seleccione
+						</option>
+					</select>
+				</div>
+			</div>
+		</form>
+	</div>
+</body>
+</html>
