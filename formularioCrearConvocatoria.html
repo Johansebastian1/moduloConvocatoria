@@ -5,17 +5,20 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Crear Convocatoria</title>
 	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/formularioCrearConvocatoria.css">
 </head>
 <body>
-	<div class="container-fluid col-lg-12">
+	<div class="container-fluid col-lg-12 main">
 		<form action="contact.php" method="POST">
 			<div class="row">
 				<div class="col-lg-6">
-					<header>Crear Convocatoria</header>
+					<header>
+						<h1>Crear Convocatoria</h1>
+					</header>
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-lg-6">
+				<div class="col-lg-6 mensaje">
 					<p>
 						En este espacio diligencie los datos requeridos. los datos marcados con (*) son obligatorios cuando termine el click en aceptar.
 					</p>
@@ -106,6 +109,14 @@
 				</div>
 			</div>
 			<div class="row">
+				<div class="form-group col-lg-2">
+					<label for="codigoConvocatoria">
+						Codigo Convocatoria
+					</label>
+					<input type="text" name="codigoConvocatoria" id="codigoConvocatoria" class="form-control"/>
+				</div>
+			</div>
+			<div class="row">
 				<div class="form-group col-lg-6">
 					<label for="descripcion">Descripcion</label>
 					<textarea name="descripcion" id="descripcion" rows="1" cols="1" class="form-control">
@@ -140,6 +151,8 @@
 						</option>
 					</select>
 				</div>
+			</div>
+			<div class="row">	
 				<div class="form-group col-lg-2">
 					<label for="InstitucionesFinanciadoras">
 						Instituciones financiadoras
@@ -151,18 +164,7 @@
 						</option>
 					</select>
 				</div>
-				<div class="form-group col-lg-2">
-					<label for="convenio">
-						Convenio
-					</label>
-					<select name="select" id="convenio"
-					 class="form-control">
-						<option value="Seleccione">
-							Seleccione
-						</option>
-					</select>
-				</div>
-			</div>
+			</div>	
 			<div class="row">
 				<div class="form-group col-lg-2">
 					<label for="maximoPorcentajeFinanciar">
@@ -196,7 +198,107 @@
 					</label>
 					<input type="text" name="montoMaximoFinanciar" id="montoMaximoFinanciar" class="form-control"/>
 				</div>
+				<div class="form-group col-lg-2">
+					<label for="montoTotalConvocatoria">
+						Monto total convocatoria
+					</label>
+					<input type="text" name="montoTotalConvocatoria" id="montoTotalConvocatoria" class="form-control"/>
+				</div>
 			</div>
+			<div class="row">
+				<div class="form-group col-lg-2">
+					<label for="convenio">
+						Convenio
+					</label>
+					<select name="select" id="convenio"
+					 class="form-control">
+						<option value="Seleccione">
+							Seleccione
+						</option>
+					</select>
+				</div>
+			</div>
+			<div class="row">
+				<div class="form-group col-lg-2">
+					<label for="cdp">
+						CDP
+					</label>
+					<input type="text" name="cdp" id="cdp" class="form-control"/>
+				</div>
+				<div class="form-group col-lg-2">
+					<label for="fechaCdp">
+							Fecha CDP
+					</label>
+					<input type="date" name="fechaCdp" id="fechaCdp" class="form-control"/>	
+				</div>
+			</div>
+			<div class="row">
+				<div class="form-group col-lg-2">
+					<label for="cdr">
+						CDR
+					</label>
+					<input type="text" name="cdr" id="cdr" class="form-control"/>
+				</div>
+				<div class="form-group col-lg-2">
+					<label for="fechaCdr">
+							Fecha CDR
+					</label>
+					<input type="date" name="fechaCdr" id="fechaCdr" class="form-control"/>	
+				</div>
+			</div>
+			<div class="row">
+				<div class="form-group col-lg-2">
+					<label for="url">
+						URL
+					</label>
+					<input type="text" name="url" id="url" class="form-control"/>
+				</div>
+			</div>
+			<div class="row">	
+				<div class="form-group col-lg-6">
+					<label for="DefinirEstructuraConvocatoria">
+						Definir estructura convocatoria
+					</label>
+					<select name="select" id="DefinirEstructuraConvocatoria"
+					 class="form-control">
+						<option value="Seleccione">
+							Seleccione
+						</option>
+					</select>
+				</div>
+			</div>
+			<div class="row">	
+				<div class="form-group col-lg-2">
+					<label for="convocatoria">
+						Convocatoria
+					</label>
+					<select name="select" id="convocatoria"
+					 class="form-control">
+						<option value="Seleccione">
+							Seleccione
+						</option>
+					</select>
+				</div>
+				<div class="form-group col-lg-2">
+					<label for="numeroProyecto">
+						Numero proyecto
+					</label>
+					<input type="text" name="numeroProyecto" id="numeroProyecto" class="form-control"/>
+				</div>
+				<div class="form-group col-lg-2">
+					<label for="vigencia">
+						Vigencia
+					</label>
+					<input type="text" name="vigencia" id="vigencia" class="form-control"/>
+				</div>
+			</div>
+			<div class="row col-lg-6">
+				<div class="btn-group">
+ 					<button type="button" class="btn btn-default">Cancelar</button>
+  					<button type="button" class="btn btn-default">Anexos</button>
+ 				    <button type="button" class="btn btn-default">Guardar Cambios</button>
+				</div>
+			</div>	
 		</form>
 	</div>
 </body>
