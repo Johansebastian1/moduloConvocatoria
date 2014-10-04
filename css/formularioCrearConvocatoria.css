@@ -1,7 +1,11 @@
 .main{
 	font-family: Arial;
 	font-size: 12px;
+	margin-left: 350px;
 }
 .mensaje{
 	background-color: #ddd;
+}
+.errorbox{
+	border: 1px solid #F00;
 }

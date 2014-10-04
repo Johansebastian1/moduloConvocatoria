@@ -6,7 +6,6 @@
 	<title>Crear Convocatoria</title>
 	<link rel="stylesheet" href="css/bootstrap.css">
 	<link rel="stylesheet" href="css/formularioCrearConvocatoria.css">
-	<link rel="stylesheet" type="text/css" href="">
 </head>
 <body>
 	<div class="container-fluid col-lg-12 main">
@@ -109,6 +108,7 @@
 					<input type="text" name="convocatoria" id="convocatoria" class="form-control"/>
 				</div>
 			</div>
+			<div id="convocatoria-error" style="display:none;"></div>
 			<div class="row">
 				<div class="form-group col-lg-2">
 					<label for="codigoConvocatoria">
@@ -297,12 +297,12 @@
 				<div class="btn-group">
  					<button type="button" class="btn btn-default">Cancelar</button>
   					<button type="button" class="btn btn-default">Anexos</button>
- 				    <button type="button" class="btn btn-default">Guardar Cambios</button>
+ 				    <button id="submit-btn-1" type="button" class="btn btn-default">Guardar Cambios</button>
 				</div>
 			</div>	
 		</form>
 	</div>
 	<script src="js/jquery-2.1.1.min.js"></script>
-	<script src="js/validacion.js"></script>
+	<script src="js/validacionesFormularioCrearConvocatoria.js"></script>
 </body>
 </html>
