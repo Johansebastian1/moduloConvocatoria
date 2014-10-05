@@ -1,11 +1,46 @@
-.main{
-	font-family: Arial;
-	font-size: 12px;
-	margin-left: 350px;
+.btn-grupo{
+	margin-bottom: 15px;
+	margin-left: 175px;
 }
-.mensaje{
-	background-color: #ddd;
+.button{
+	background-color: #ABD004;
+	color: #fff;
+}
+.div-mensaje{
+	margin-left: 0px;
+	margin-right: 0px;
+}
+.encabezado{
+	background-color: #ABD004;
 }
 .errorbox{
 	border: 1px solid #F00;
+}
+.footer{
+	background-color: #ABD004;
+}
+.iconos{
+	margin-left: 431px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.img{
+	height: 40px;
+	width: 40px;
+}
+.main{
+	margin-left: 350px;
+	font-family: Arial;
+	font-size: 14px;
+}	
+.mensaje{
+	background-color: #CCFF99;
+}
+.logo{
+	position: absolute;
+	margin-top: -75px;
+}
+.titulo{
+	color: #fff;
+	margin-left: 157px;
 }
