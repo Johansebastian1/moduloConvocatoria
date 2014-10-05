@@ -5,10 +5,11 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>www.crearconvocatoria.com</title>
 	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/jquery.mCustomScrollbar.css">
 	<link rel="stylesheet" href="css/formularioCrearConvocatoria.css">
 </head>
 <body>
-	<div class="container-fluid col-lg-12 main">
+	<div class="container-fluid col-lg-12 main mCustomScrollbar">
 		<div class="row">
 			<header class="encabezado col-lg-6">
 				<h1 class="titulo">Crear convocatoria</h1>
@@ -336,6 +337,14 @@
 		</div>
 	</div>
 	<script src="js/jquery-2.1.1.min.js"></script>
+	<script src ="js/jquery.mCustomScrollbar.concat.min.js"> </script>
 	<script src="js/validacionesFormularioCrearConvocatoria.js"></script>
+	<script> 
+    ( function ( $ ) { 
+        $ ( window ) . load ( function ( ) { 
+            $ ( ".main" ) . mCustomScrollbar ( ) ; 
+        } ) ; 
+    } ) (jQuery) ; 
+	</script>
 </body>
 </html>
