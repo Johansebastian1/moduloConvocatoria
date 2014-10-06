@@ -12,6 +12,7 @@ $(document).ready(function(){
 	$('#submit-btn-1').click(validateUrl);
 	$('#submit-btn-1').click(validateNumeroProyecto);
 	$('#submit-btn-1').click(validateVigencia);
+	$('#submit-btn-2').click(validateAnexo);
 });
 
 function validateConvocatoria(){
@@ -193,6 +194,19 @@ function validateVigencia(){
 	}else{
 		$('#vigencia-error').slideUp().html('');
 		$('#vigencia').removeClass('errorbox');
+	}
+}
+
+function validateAnexo(){
+	var l=$('#nombreAnexo');
+	if(l.length===1 && l.val()===''){
+		var e13=$('#nombreAnexo-error');
+		e13.html('Escriba el nombre del anexo');
+		e13.slideDown();
+		$('#nombreAnexo').addClass('errorbox');
+	}else{
+		$('#nombreAnexo-error').slideUp().html('');
+		$('#nombreAnexo').removeClass('errorbox');
 	}
 }
 

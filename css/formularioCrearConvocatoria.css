@@ -1,3 +1,6 @@
+.anexo{
+	margin-bottom: 20px;
+}
 .btn-grupo{
 	margin-bottom: 15px;
 	margin-left: 175px;
@@ -5,6 +8,11 @@
 .button{
 	background-color: #ABD004;
 	color: #fff;
+}
+.buttonGuardar{
+	background-color: #ABD004;
+	color: #fff;
+	margin-bottom: 20px;
 }
 .div-mensaje{
 	margin-left: 0px;

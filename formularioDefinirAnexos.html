@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/jquery.mCustomScrollbar.css">
+	<link rel="stylesheet" href="css/formularioCrearConvocatoria.css">
+</head>
+<body>
+	<div class="container-fluid col-lg-12 main mCustomScrollbar">
+		<div class="row">
+			<header class="encabezado col-lg-6">
+				<h1 class="titulo">Crear convocatoria</h1>
+			</header>
+		</div>
+		<div class="row">
+			<form action="contact.php" method="POST">
+				<div class="row">
+					<h3 class="col-lg-6">Anexos</h3>
+				</div>
+				<div class="row">
+					<div class="col-lg-2">
+						<label for="nombreAnexo">
+						Nombre Anexo
+						</label>
+						<input id="nombreAnexo" type="text" name="nombreAnexo" class="form-control"/>
+						<div id="nombreAnexo-error" style="display:none;">
+						</div>
+					</div>
+				</div>
+				<div class="row anexo">
+					<div class="col-lg-3">
+						<label for="nombreAnexo">
+						Anexo
+						</label>
+						<input id="nombreAnexo" type="file" name="" class="form-control"/>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-2">
+						<button id="submit-btn-2" type="button" class="buttonGuardar btn btn-default">Guardar</button>
+					</div>
+				</div>
+			</form>	
+		</div>	
+		<div class="row">
+			<footer class="footer col-lg-6">
+				<div>
+					<ul class="iconos">
+						<a href="https://www.facebook.com/colciencias">
+							<img class="img" src="images/facebook.png">
+						</a>
+						<a  href="https://twitter.com/Colciencias">
+							<img class="img" class="img" src="images/twitter.png">
+						</a>
+						<a href="https://www.youtube.com/user/colciencias">
+							<img class="img" src="images/youtube.png">
+						</a>
+						<a href="http://www.colciencias.gov.co/rss.xml">
+							<img class="img" src="images/Rss.png">
+						</a>
+					</ul>
+				</div>
+				<img class="logo" src="images/colciencias.jpg">
+			</footer>
+		</div>
+	</div>
+	<script src="js/jquery-2.1.1.min.js"></script>
+	<script src ="js/jquery.mCustomScrollbar.concat.min.js"> </script>
+	<script src="js/validacionesFormularioCrearConvocatoria.js"></script>
+	<script> 
+    ( function ( $ ) { 
+        $ ( window ) . load ( function ( ) { 
+            $ ( ".main" ) . mCustomScrollbar ( ) ; 
+        } ) ; 
+    } ) ( jQuery ) ; 
+	</script>
+</body>
+</html>
