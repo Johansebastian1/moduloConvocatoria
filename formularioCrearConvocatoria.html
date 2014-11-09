@@ -8,7 +8,7 @@
 	<link rel="stylesheet" href="css/jquery.mCustomScrollbar.css">
 	<link rel="stylesheet" href="css/formularioCrearConvocatoria.css">
 </head>
-<body>
+<body ng-app="MyApp">
 	<div class="container-fluid col-lg-12 main mCustomScrollbar">
 		<div class="row">
 			<header class="encabezado col-lg-6">
@@ -16,7 +16,7 @@
 			</header>
 		</div>
 		<div class="row">	
-		<form action="contact.php" method="POST">
+		<form ng-controller="formController">
 			<div class="row div-mensaje">
 				<div class="col-lg-6 mensaje">
 					<p>
@@ -105,7 +105,7 @@
 					<label for="convocatoria">
 						(*)Convocatoria
 					</label>
-					<input id="convocatoria" type="text" name="convocatoria" class="form-control"/>
+					<input id="convocatoria" ng-model="formdata.convocatoria" type="text" name="convocatoria" class="form-control"/>
 				</div>
 			</div>
 			<div id="convocatoria-error" style="display:none;"></div>
@@ -309,7 +309,7 @@
 				<div class="btn-group btn-grupo">
  					<button type="button" class="button btn btn-default">Cancelar</button>
   					<a class="button btn btn-default" href="formularioDefinirAnexos.html">Anexos</a>
- 				    <button id="submit-btn-1" type="button" class="button btn btn-default">Guardar Cambios</button>
+ 				    <button id="submit-btn-1" ng-click="sendData()" type="button" class="button btn btn-default">Guardar Cambios</button>
 				</div>
 			</div>	
 		</form>
